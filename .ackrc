@@ -1,0 +1,9 @@
+--color-filename=green
+--color-lineno=blue
+--color-match=cyan
+--sort-files
+--ignore-case
+--ignore-dir=target
+--ignore-dir=static
+--type-set=doxygen=.dox
+

@@ -1,0 +1,16 @@
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
+if [ -f ~/.bashrc ] ; then
+    . ~/.bashrc;
+fi
+
+##
+# Your previous /Users/sepreece/.bash_login file was backed up as /Users/sepreece/.bash_login.macports-saved_2012-05-09_at_11:19:43
+##
+
+# MacPorts Installer addition on 2012-05-09_at_11:19:43: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
