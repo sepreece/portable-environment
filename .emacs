@@ -51,15 +51,15 @@
 
 ;; Add special places to load-path
 (add-to-list 'load-path "~/Emacs")
-(require 'php-mode)
-
-    (setq php-mode-hook
-	  '(lambda ()
-	     (define-key php-mode-map "\e{" 'php-beginning-of-defun)
-	     (define-key php-mode-map "\e}" 'php-end-of-defun)
-	     (define-key php-mode-map "\e(" 'php-beginning-of-defun)
-	     (define-key php-mode-map "\e)" 'php-end-of-defun)
-	     ))
+;;(require 'php-mode)
+;;
+;;    (setq php-mode-hook
+;;	  '(lambda ()
+;;	     (define-key php-mode-map "\e{" 'php-beginning-of-defun)
+;;	     (define-key php-mode-map "\e}" 'php-end-of-defun)
+;;	     (define-key php-mode-map "\e(" 'php-beginning-of-defun)
+;;	     (define-key php-mode-map "\e)" 'php-end-of-defun)
+;;	     ))
 
 ; NOTE the gnus directories are removed; this means motgnus.el must
 ; be in a place that *is* on the list, like ~/emacs
