@@ -1,500 +1,500 @@
-man curl
-cd Desktop
-diff ss-c*pl ra*pl
-late
-diff ra-cre* ss-cre*
-diff ra-cre* ~/crea*pl
-rm ra-* ss-*
-cd src/Falcon
-cd src
-ls
-cd fal*
-ls
-cd falcon-site
-svn up
-cd ..
-cd src
-git pull
-cd ../..
-ls
-/bin/rm -rf falcon-trunk
-git clone https://git-wip-us.apache.org/repos/asf/falcon.git/falcon-website-general .
-git clone https://git-wip-us.apache.org/repos/asf/falcon.git/falcon-website-general falcon-trunk
-git clone https://git-wip-us.apache.org/repos/asf/falcon.git falcon
-cd src
-ls
-cd \
-cd falcon
-ls
-ack "how-to"
-ack "how to"
-ack contribute
-history|grep git
-ack "on boarding"
-ls
-find . -name "Getting*"
-ls
-cd ..
-ls
-svn co svn+ssh://svn.apache.org/repos/asf/falcon/site/ site
-history|grep "svn.*apache"
-ls
-ls site
-svn co svn+ssh://svn.apache.org/repos/asf/falcon falcon-site
-cd src
-svn co ssh+svn:https://svn.apache.org/repos/asf/falcon falcon-site
-svn co ssh+svn://svn.apache.org/repos/asf/falcon falcon-site
-svn co svn+ssh://svn.apache.org/repos/asf/falcon falcon-site
-cd src
-ls
-cd GDM
-ls
-cd GDM
-git pull
-ls
-git help am
-git help squash
-git help rebase
-git help am
-git help commit
-git help am
-git history
-git log
-ls
-cd src/GDM
-ls
-cd GDM
-git log -l 3
-git help log
-git log -n2 --pretty=medium
-git log -n3 --pretty=full
-ls
-file q
-ls -l q
-late
-ack "path.*alerts"
-e 
-e webapp/src/main/java/com/yahoo/grid/tools/web/resource/AlertsResource.java
-cd ..
-cd falcon
-ls
-ack incubator
-t CHANGES*
-git log -n3
-ssh warquickwhole.champ.corp.yahoo.com
-ls
-ls /
-ssh warquickwhole.champ.corp.yahoo.com
-ssh gdmconsole.ygrid.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-ssh gdmconsole.ygrid.yahoo.com
-ssh replication.red.ygrid.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-cd /homes
-ssh gsbl90214.blue.ygrid.yahoo.com
-ssh adm102.blue.ygrid.yahoo.com
-ssh warquickwhole.champ.corp.yahoo.com
-ssh gsbl90210.blue.ygrid.yahoo.com
-ssh gdbl90214.blue.ygrid.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-ssh gsbl90212.blue.ygrid.yahoo.com
-sh gsbl90214.blue.ygrid.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-ssh gsbl90212.blue.ygrid.yahoo.com
-ssh replication.red.ygrid.yahoo.com
-ssh replication.blue.ygrid.yahoo.com
-ssh gsbl90210.blue.ygrid.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-late
-cd Desktop
-late
-ssh gdmconsole.ygrid.yahoo.com
-e .ssh/kno*
-scp .ba* .lo* .em* gdmconsole.ygrid.yahoo.com:
-ssh gdmconsole.ygrid.yahoo.com
-ssh gsbl90211.blue.ygrid.yahoo.com
-cd src
-cd GDM
-git pull
-cd ../..
-ls
-cd falcon
-ls
-git pull
-cd src
-cd GDM
-ls
-cd GDM
-git pull
-cd src/GDM/GDM
-late
-git pull
-find . -name "editDataSet.jsp"
-e console/src/main/webapp/dataset/editDataSet.jsp
-ssh acquisition.red.ygrid.yahoo.com
-e .ssh/known_hosts
-ssh acquisition.red.ygrid.yahoo.com
-scp .bas* acquisition.red.ygrid.yahoo.com:
-ssh acquisition.red.ygrid.yahoo.com
-ssh gdmconsole.ygrid.yahoo.com
-ssh acquisition.red.ygrid.yahoo.com
-yinst help install
-ssh warquickwhole.champ.corp.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-cd src/GDM/GDM
-git pull
-ack hcatpartitiondatapath
-ack hcatpartitiondatapath --type=dox
-cat ~/.ackrc
-ls
-ack --help-types
-e ~/.ackrc
-ssh warquickwhole.champ.corp.yahoo.com
-history 20
-ack hcatpartitiondatapath
-cat ~/.ackrc
-ack --version
-ack help type-set
-e ~/.ackrc
-ack help type-set
-man ack
-ack help
-ack --help
-e ~/.ackrc
-fg
-history 10
-history 20
-ack hcatpartitiondatapath
-ack --help-types
-e ~/.ackrc
-ack hcatpartitiondatapath
-e ~/.ackrc
-ack hcatpartitiondatapath
-ssh warquickwhole.champ.corp.yahoo.com
-e ~/.ackrc
-ack hcatpartitiondatapath
-ack hcatpartitiondatapath --type=doxygen
-cat ~/.ackrc
-cd src/GDM/GDM
-git pull
-cd src
-ls
-cd falcon
-ls
-git pull
-cd src/GDM/GDM
-find . -name "AlertsResourceTest.java"
-e webapp/src/test/java/com/yahoo/grid/tools/web/resource/AlertsResourceTest.java
-which npm
-ssh retention.tan.ygrid.yahoo.com
-scp .ba* .lo* .em* retention.tan.ygrid.yahoo.com:
-ssh retention.tan.ygrid.yahoo.com
-cd src/falcon
-ls
-cd docs
-ls
-cd src
-ls
-cd site
-ls
-cd res*
-ls
-cd .
-cd ..
-ls
-find . -name "index.html"
-cd ..
-ls -R
-cd src/falcon
-ls
-cd docs
-ls
-ls -R
-ssh replication.red.ygrid.yahoo.com
-e .ssh/.known*s
-ls .ssh
-e .ssh/kn*s
-ssh replication.red.ygrid.yahoo.com
-scp .ba* .em* .lo* replication.red.ygrid.yahoo.com:
-ssh replication.red.ygrid.yahoo.com
-clear
-ssh replication.red.ygrid.yahoo.com
-ssh acquisition.red.ygrid.yahoo.com
-cd src/GDM/GDM
-git pull
-cd src
-cd GDM
-mkdir hadooptest
-git clone https://git.corp.yahoo.com/HadoopQE/hadooptest.git
-git clone git@https://git.corp.yahoo.com/HadoopQE/hadooptest.git
-git clone https://git@git.corp.yahoo.com/HadoopQE/hadooptest.git
-history|grep "git clone"
-pwd
-git clone https://git.corp.yahoo.com/HadoopQE/hadooptest.git hadooptest
-git clone git@git.corp.yahoo.com:HadoopQE/hadooptest.git
-cd hadooptest
-ack consolehandle
-ssh warquickwhole.champ.corp.yahoo.com
-curl http://developer.yahoo.com/yui/examples/datatable/assets/img/tr.gif
-man curl
-history 10
-ssh gdmconsole.ygrid.yahoo.com
-ssh gdmconsole.ygrid.yahoo.co
-ssh gdmconsole.ygrid.yahoo.com
-cd src/falcon
-ls
-ack "subseq"
-ack enityname
-enity
-ack enity
-ack fuzzysearch
-ack getentities
-logs
-enity
 ssh gdmconsole.ygrid.yahoo.com
 ssh replication.blue.ygrid.yahoo.com
-e .ssh/kno*
-ssh replication.blue.ygrid.yahoo.com
-scp .ba* .lo* .em* replication.blue.ygrid.yahoo.com:
-ssh replication.blue.ygrid.yahoo.com
-ssh acquisition.blue.ygrid.yahoo.com
-scp .ba* .lo* .em* acquisition.blue.ygrid.yahoo.com:
-ssh acquisition.blue.ygrid.yahoo.com
-cd src/falcon
-ls
-ack discover
-ls
-ls docs
-ls docs/src
-ls docs/src/site
-ssh gsbl90214.blue.ygrid.yahoo.com
-ssh gdmconsole.ygrid.yahoo.com
-cd src/GDM
-cd GDM
-ls
-cd hadoop
-ls
-ls -R
-find . -name "*java"
-cd ../hadoop*ery
-find . -name "*java"
-cd ../..
-cd GDM
-find . -name "HFTPDist*java"
-ack "implements.*mapper"
-late
-grep "->" extracted-pages >aliased-pages
-grep -e "->" extracted-pages > aliased-pages
-cd src/GDM/GDM
-git pull
-cd src/GDM/GDM
-ssh gsbl90214.blue.ygrid.yahoo.com
-ssh gdmconsole.ygrid.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-ssh acquisition.blue.ygrid.yahoo.com
-ssh gdmconsole.ygrid.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-cd src/GDM/GDM
-find . -name "dataset.xsd"
-e /console/src/main/resources/schema/dataset/dataset.xs
-e /console/src/main/resources/schema/dataset/dataset.xsd
-e console/src/main/resources/schema/dataset/dataset.xsd
-ls src/GDM
-ssh gsbl90214.blue.ygrid.yahoo.com
-ssh gdmconsole.ygrid.yahoo.com
-ssh gdmconsole.ygrid.yahoo.com
-cd src/GDM/GDM
-ack collision
-e console/src/main/java/com/yahoo/grid/tools/console/model/dataset/specification/parser/UnifiedSpecificationParser.java
-cd src/GDM/GDM
-find . -name "UnifiedSpecificationParser.java"
-e ./console/src/main/java/com/yahoo/grid/tools/console/model/dataset/specification/parser/UnifiedSpecificationParser.java
-scp gsbl90214.blue.ygrid.yahoo.com:log-extract-20150417 ~
-ssh gsbl90214.blue.ygrid.yahoo.com
-cd src/Falcon
-ls
-ls -l checkstyle
-cd checkstyle/src
-ls
-ls -R
-e main/resources/falcon/checkstyle.xml
-cd src/Falcon
-ack ja009
-ssh replication.blue.ygrid.yahoo.com
-ssh acquisition.blue.ygrid.yahoo.com
-cd src/Falcon
-git pull
-ack addFeedInstance
-e common/src/main/java/org/apache/falcon/metadata/InstanceRelationshipGraphBuilder.java
-ack addprocessfeededge
-ls
-cd common/src/main/java/org/apache/falcon/metadata
-ls
-e MetadataMappingService.java
-find . -name "*[tT]inker*"
-cd ..
-find . -name "*[tT]inker*"
-cd ../../..
-cd ..
-ls
-find . -name "*[tT]inker*"
-fg
-t Instal*
-ls
-find . -name "*falcon-conf*"
-t src/bin/falcon-config.sh
-ls src/bin
-ack tinkerpop
-ls
-ack "@path"
-e webapp/src/main/java/org/apache/falcon/resource/InstanceManager.java
-ack getinstances
-e client/src/main/java/org/apache/falcon/resource/EntitySummaryResult.java
-e webapp/src/main/java/org/apache/falcon/resource/InstanceManager.java
-find . -name "*ropert*"
-e ./common/src/main/java/org/apache/falcon/util/ApplicationProperties.java
-ack graphdb
-e src/conf/startup.properties
-ack berkeleyje
-ack metastore
-ack tinkerpop
-cd src/Falcon
-ack gremlin
-ack blueprints
-ack graphson
-ack addinstance
-e common/src/main/java/org/apache/falcon/metadata/InstanceRelationshipGraphBuilder.java
-ssh dense03.blue.ygrid.yahoo.com
-late
-clean
-late
-rm jap*
-rm acq*
-cd Desktop
-ls
-mkdir PubSub
-mv GDMS* PubSub
-mv GDMM* PubSub
-cd PubSub
-unzip GDMS*
-unzip GDMM*
-e Pub*java Sub*java
-ls
-cd GDMP*
-ls
-cd ls
-ls
-cd GSMS*
-ls
-cd src
-ls
-cd y*
-ls
-cd g*
-ls
-cd m*
-ls
-cd c*
-ls
-e Sub*
-cd src/GDM/GDM
-git pull
-find . -name "DataSetInstanceArchivalFilter.java"
-e ./retention/discovery/src/main/java/com/yahoo/grid/tools/discovery/filter/DataSetInstanceArchivalFilter.java
-cd retention
-ack perpoll
-cd ..
-ls
-cd disc*
-ack perpoll
-e src/main/java/com/yahoo/grid/tools/discovery/filter/OldestDataSetInstancesFilter.java
-cd src/GDM/GDM
-find . -name "datasource.xsd"
-e console/src/main/resources/schema/datasource/datasource.xsd
-cd src/GDM/GDM
-ack clusterdisttag
-ack getclusterconfigpackage
-e core/src/main/java/com/yahoo/grid/tools/util/classloader/HadoopConfigInstaller.java
-dist_tag list elrond_current
-ssh warquickwhole.champ.corp.yahoo.com
-ssh replication.tan.ygrid.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-late
-ssh gdmconsole.ygrid.yahoo.com
-e .ssh/known_hosts
-ssh gdmconsole.ygrid.yahoo.com
 ssh replication.red.ygrid.yahoo.com
-e .ssh/known_hosts
-ssh replication.red.ygrid.yahoo.com
-ssh acquisition.red.ygrid.yahoo.com
-e .ssh/known_hosts
-ssh acquisition.red.ygrid.yahoo.com
-ssh retention.red.ygrid.yahoo.com
-ssh replication.tan.ygrid.yahoo.com
-ssh replication.blue.ygrid.yahoo.com
-e .ssh/known_hosts
-ssh replication.blue.ygrid.yahoo.com
-cd /
-ls
-ls Library
-ls Library/Google
-ls Applications
 cd src/GDM/GDM
-git pull
-cd GDM
-ls
-cd ..
-ls
-git clone git@git.corp.yahoo.com:hadoop/httpproxy.git
-git clone git@git.corp.yahoo.com:hadoop/hdfsproxy.git
-ls
-ls ..
-git clone git@git.corp.yahoo.com:hadoop/hio-archival.git
-cd GDM
-ls
-cd proxy
-ls
-ls -R
-cd ../..
-ls
-cd httpproxy
-ls
-ls -R
-cd ../hdfs
-cd ../hdfs*
-ls
-cd hdfsproxy-3.2*
-ls
-ls -R
-ls
-cd ../..
-ls
-cd hio*
-ls
-ls -R
-cd src/GDM/GDM
-ls
-ls acqui*
-find discovery -n "*java"
-find . -name "*java"
-find . -name "*distcp*"
-cd
-scp .emacs warquickwhole.champ.corp.yahoo.com:
-scp .emacs gsbl90214.blue.ygrid.yahoo.com:
-scp .emacs gdmconsole.ygrid.yahoo.com:
-ssh gdmconsole.ygrid.yahoo.com
-ssh gsbl90214.blue.ygrid.yahoo.com
-cd src/GDM/GDM
-ack "new.*alert"
-ack "new.*alert[^1-zA-Z0-9]""
-ack "new.*alert[^1-zA-Z0-9]"
-ack "new *alert[^1-zA-Z0-9]"
-ack "new *alert[^1-zA-Z0-9]" >~/alert-instantiations
-e ~/alert-instantiations
 find . -name "AlertingService.java"
 e ./core/src/main/java/com/yahoo/grid/tools/application/alert/AlertingService.java
-e ~/alert-instantiations
-e ./core/src/main/java/com/yahoo/grid/tools/application/alert/AlertingService.java
-ack "implements AlertingService"
-e core/src/main/java/com/yahoo/grid/tools/application/alert/RepositoryBackedAlertingService.java
-e ~/alert-instantiations
+find . -name "ServicesRegistry.java"
+e ./core/src/main/java/com/yahoo/grid/tools/util/ServicesRegistry.java
+ls core/src/main/java/com/yahoo/grid/tools/application/alert
+find . -name "DataSetExplorer.java"
+e console/src/main/java/com/yahoo/grid/tools/console/explorer/DataSetExplorer.jav
+cd src
+ls
+cd oozie
+ls
+git pull
+ack "@Service"
+ack publish
+cd ..
+cd falcon
+git pull
+ack publish
+cd ../GDM/GDM
+ack alertingservice
+cd src/falcon
+ls
+cd messa*
+ls
+cd src
+ls
+cd main
+s
+ls
+cd java
+ls
+cd org
+ls
+cd apache
+ls
+cd falcon
+ls
+cd me*
+ls
+e *.java
+cd src/falcon
+ack concrete
+ack monitored
+cd src/oozie
+ack monitored
+cd src/falcon
+ack messag --type=twiki
+ack messag --type=wiki
+ack messag
+e metrics/src/main/java/org/apache/falcon/aspect/AlertMessage.java
+ack TOPIC_NAME
+cd src/falcon
+ack mapmessage
+e messaging/src/main/java/org/apache/falcon/messaging/JMSMessageProducer.java
+ack monitored
+e metrics/src/main/java/org/apache/falcon/aspect/GenericAlert.java
+ack instance-failed
+fg
+ack failedinstance
+fg
+hunt . -name "Operability.*"
+find . -name "Operability.*"
+fg
+ack succeededinstance
+fg
+e common/src/main/java/org/apache/falcon/workflow/WorkflowJobEndNotificationService.java
+ssh dense03.blue.ygrid.yahoo.com
+ssh gsbl90421.blue.ygrid.yahoo.com
+ssh replication.red.ygrid.yahoo.com
+ssh replication.blue.ygrid.yahoo.com
+ssh gdmconsole.ygrid.yahoo.com
+ssh gsbl90431.blue.ygrid.yahoo.com
+cd src/GDM/GDM
+git pull
+find . -name "*etric*"
+e ./core/src/main/java/com/yahoo/grid/tools/metrics/Metric.java
+ack "total memory"
+ack latencysecdatacommit
+fg
+ack mapfailures
+ack "metric name"
+ack metrics.js
+fg
+ack "@path.*details"
+fg
+ssh replication.red.ygrid.yahoo.com
+cd src/GDM/GDM
+git pull
+find . -name "WorkflowsResource.java"
+e ./webapp/src/main/java/com/yahoo/grid/tools/web/resource/WorkflowsResource.java
+find . -name "Jdbc*Dao.java"
+fg
+ack "@path.*count"
+fg
+cd src
+ls
+cd Hive*
+ls
+ack facebook
+ssh replication.red.ygrid.yahoo.com
+ssh acquisition.red.ygrid.yahoo.com
+scp ,em* .ba* .lo* acquisition.red.ygrid.yahoo.com:
+ssh acquisition.red.ygrid.yahoo.com
+cd src/GDM/GDM
+find . -name "*EventHandler*java"
+e ./core/src/main/java/com/yahoo/grid/tools/webhooks/EventHandler.java
+e ./replication/webapp/src/main/java/com/yahoo/grid/replication/web/servlet/DataAvailabilityEventHandlerServlet.java
+ack dataavailability
+e replication/webapp/src/main/webapp/WEB-INF/web.xml
+e discovery/src/main/java/com/yahoo/grid/tools/discovery/adaptor/SubscribableDataSetDiscoveryAdaptor.java
+find . -name "WebHooksEvent*java"
+e ./core/src/main/java/com/yahoo/grid/tools/webhooks/WebHooksEventPublishingService.java
+ack "either suspended or"
+e workflow/src/main/java/com/yahoo/grid/tools/coordinator/CoordinationService.java
+ack registerwithdata
+e discovery/src/main/java/com/yahoo/grid/tools/discovery/adaptor/SubscribableDataSetDiscoveryAdaptor.java
+ssh acquisition.red.ygrid.yahoo.com
+e .bash_aliases
+for c in "red blue tan"; do for f in "replication acquisition retention"; do scp .bash_aliases $f.$c.ygrid.yahoo.com:; done; done
+for c in "red blue tan"; do for f in "replication acquisition retention"; do echo $f.$c.ygrid.yahoo.com; scp .bash_aliases $f.$c.ygrid.yahoo.com:; done; done
+for c in red blue tan; do for f in replication acquisition retention; do echo $f.$c.ygrid.yahoo.com; scp .bash_aliases $f.$c.ygrid.yahoo.com:; done; done
+e .ssh/known_hosts
+for c in red blue tan; do for f in replication acquisition retention; do echo $f.$c.ygrid.yahoo.com; scp .bash_aliases $f.$c.ygrid.yahoo.com:; done; done
+ssh warquickwhole.champ.corp.yahoo.com
+cd src/GDM/GDM
+find . -name "FileSystemInstanceList*java"
+e ./hadoop-discovery/src/main/java/com/yahoo/grid/tools/discovery/query/FileSystemInstanceListQuery.java
+ssh replication.tan.ygrid.yahoo.com
+cd src/GDM/GDM
+find . -name "DataSetSpecificationParserTest.java"
+e ./core/src/test/java/com/yahoo/grid/tools/model/dataset/specification/parser/DataSetSpecificationParserTest.java
+cd core/src/testresources/data-flow/datasets
+cd core
+cd src/test/resources/data-flow/datasets
+ls
+grep "<Path" *
+cd src/GDM/GDM
+find . -name "FileSystemInstanceList*java"
+e ./hadoop-discovery/src/main/java/com/yahoo/grid/tools/discovery/query/FileSystemInstanceListQuery.java
+pwd
+ls
+ls ~/src/GDM//GDM
+fg
+ssh replication.red.ygrid.yahoo.com
+ssh gsbl90214.blue.ygrid.yahoo.com
+ssh gdmconsole.ygrid.yahoo.com
+scp .bas* gdmconsole.ygrid.yahoo.com:
+ssh gdmconsole.ygrid.yahoo.com
+ls /usr
+ls /usr/local
+ls /
+ls /bin
+ls -l /usr
+ls /usr/share
+cd src/GDM/GDM
+ls -R web-resource >q
+t q
+ssh gdmconsole.ygrid.yahoo.com
+scp gdmconsole.ygrid.yahoo.com:unique-contacts .
+late
+rm c1 c2 c3 c4 c5 
+late
+cd src/GDM/GDM
+git pull
+ack "@path.*logs"
+find . -name "*alert*jsp"
+e ./console/src/main/webapp/alert/alerts.jsp
+cd src/GDM/GDM
+find . -name "editDataSet.jsp"
+e ./console/src/main/webapp/dataset/editDataSet.jsp
+ack verifyinstance
+ack verificationinstance
+fg
+ack verificationinstance --type=java
+fg
+cd src/GDM/GDM
+ack failuretype
+e webapp/src/main/java/com/yahoo/grid/tools/web/util/WorkflowFailureUtils.java
+ack wellknown.step.types
+fg
+cd src/GDM/GDM
+ack instancedate
+e metastore/tasklet/src/main/java/com/yahoo/grid/tools/metastore/executor/HCatalogClientUtil.java
+ssh gdmconsole.ygrid.yahoo.com
+cd src/GDM/GDM
+ack "constructing remove block reader"
+ack "constructing remote block reader"
+ssh replication.red.ygrid.yahoo.com
+ssh gdmconsole.ygrid.yahoo.com
+ssh replication.red.ygrid.yahoo.com
+ssh gdmconsole.ygrid.yahoo.com
+ssh replication.red.ygrid.yahoo.com
+ssh warquickwhole.champ.corp.yahoo.com
+cd src/GDM/GDM
+ack accept header
+ack accept-header
+ack accept
+ack "application/"
+e webapp/src/main/java/com/yahoo/grid/tools/web/resource/AlertsResource.java
+ack "accept:"
+ls
+find . -name "Http*java"
+e core/src/main/java/com/yahoo/grid/tools/util/HttpGetUtil.java commons/src/main/java/com/yahoo/grid/tools/util/HttpClientHelper.java
+ack header-key
+e core/src/main/java/com/yahoo/grid/tools/util/HttpGetUtil.java commons/src/main/java/com/yahoo/grid/tools/util/HttpClientHelper.java
+ack header_key
+cd src/GDM/GDM
+ack yck
+e .bash_aliases
+scp gsbl90216.blue.ygrid.yahoo.com:.bash_aliases q
+diff q .bash_aliases
+e q .bash_aliases
+diff q .bash_aliases
+fg
+diff q .bash_aliases
+mv q .bash_aliases
+e .bash_aliases
+hostname
+fg
+scp .bash_aliases gsbl90216.blue.ygrid.yahoo.com:
+ssh gsbl90214.blue.ygrid.yahoo.com
+ssh gsbl90216.blue.ygrid.yahoo.com
+cd src/GDM/GDM
+find . -name "BaseConfigResource.java"
+e ./console/src/main/java/com/yahoo/grid/tools/configuration/rest/BaseConfigResource.java
+ssh gsdaq314.tan.ygrid.yahoo.com
+ssh replication.blue.ygrid.yahoo.com
+ssh replication.red.ygrid.yahoo.com
+ssh gdmconsole.ygrid.yahoo.com
+cd src/GDM/GDM
+ack isinstancewithindaterange
+e core/src/main/java/com/yahoo/grid/tools/model/dataset/instance/DataSetIdentifier.java
+cd src/GDM/GDM
+ack perfstat
+ssh gdbl90214.blue.ygrid.yahoo.com
+ssh gsbl90214.blue.ygrid.yahoo.com
+ssh replication.red.ygrid.yahoo.com
+cd src/GDM/GDM
+ack droppartition
+e metastore/tasklet/src/main/java/com/yahoo/grid/tools/metastore/executor/MetastorePartitionManipulator.java
+e metastore/tasklet/src/main/java/com/yahoo/grid/tools/metastore/executor/HCatClientPartitionManipulator.java
+find . -name "DefaultMetricsCollector.java"
+e ./core/src/main/java/com/yahoo/grid/tools/metrics/collector/DefaultMetricsCollector.java
+ack defaultmetricscollector
+fg
+ssh gdmconsole.ygrid.yahoo.com
+ssh gsbl90214.blue.ygrid.yahoo.com
+cd src/GDM/GDM
+cd core/src/main/java/com/yahoo/grid/tools/event/
+ls
+back
+ack gdmevent
+ack gmsevent
+ack alertevent
+find . -name "Event.java"
+ack workflowexecutionevent
+ack jms
+ack metricevent
+cd
+cd src/falcon
+ls
+ack jms
+back
+cd src/GDM/GDM
+ack jms
+ack message
+ack "import.*message"
+ack jms
+ack cms
+ssh gdmconsole.ygrid.yahoo.com
+ssh acquisition.blue.ygrid.yahoo.co
+ssh acquisition.blue.ygrid.yahoo.com
+cd src/GDM/GDM
+ack availability
+e discovery/src/main/java/com/yahoo/grid/tools/discovery/adaptor/SubscribableDataSetDiscoveryAdaptor.java
+cd src/GDM/GDM
+ack console_server_mode
+cd src/GDM/GDM
+ack replicationvalidation
+git pull
+ack replicationvalidation
+cd src/GDM/GDM
+find . -name "*emplat*"
+cd src/GDM/GDM
+find . -name "*DiscoveryPoller*"
+e ./discovery/src/main/java/com/yahoo/grid/tools/discovery/adaptor/poll/DiscoveryPoller.java
+find . -name "*ConfigWatcher*java"
+fg
+ssh replication.red.ygrid.yahoo.com
+cd src/GDM/GDM
+ack hrs
+cd src/GDM/GDM
+ack hrs
+ack getelapsedfor
+e webapp/src/main/java/com/yahoo/grid/tools/web/resource/WorkflowsResource.java
+cd src/GDM/GDM
+cd retention
+ack hio
+cd src/GDM/GDM
+git pull
+ssh gdmconsole.ygrid.yahoo.com
+ssh replication.red.ygrid.yahoo.com
+cd src/GDM/GDM
+find . -name "FacetSpecificationParser.java"
+e ./core/src/main/java/com/yahoo/grid/tools/model/dataset/specification/parser/FacetSpecificationParser.java
+find . -name "DataSEtDiscoveryService.java"
+find . -name "DataSetDiscoveryService.java"
+fg
+ack getdiscoverytypes
+cd src/GDM/GDM
+ack getdiscoverytypes
+ssh replication.blue.ygrid.yahoo.com
+cd src/GDM/GDM
+ack mapdownloaderrors
+e core/src/main/java/com/yahoo/grid/tools/workflow/StepExecution.java
+e replication/distcopy/src/main/java/com/yahoo/grid/replication/distcopy/tasklet/HFTPDistributedCopy.java
+traceroute vpn2-1-gci.corp.yahoo.com
+whois 96.120.29.49
+ssh replication.red.ygrid.yahoo.com
+cd src/GDM/GDM
+ack exclude.path.list.override
+e replication/distcopy/src/main/java/com/yahoo/grid/replication/distcopy/tasklet/HFTPDistributedCopy.java
+ssh replication.blue.ygrid.yahoo.com
+ssh gsbl90214.blue.ygrid.yahoo.com
+cd src/GDM/GDM
+find . -name "WorkflowsResource.java"
+e ./webapp/src/main/java/com/yahoo/grid/tools/web/resource/WorkflowsResource.java
+find . -name "workflows.jsp"
+fg
+find . -name "jobs.js"
+fg
+ssh -X warquickwhole.champ.corp.yahoo.com
+ssh warquickwhole.champ.corp.yahoo.com
+cd src/GDM/GDM
+find . -name "new.*jsp"
+find . -name "New.*jsp"
+find . -name "new*jsp"
+e ./console/src/main/webapp/common/new_header.jsp
+find . -name "defaults.js"
+e ./console/src/main/webapp/webdev/js/core/defaults.js
+find . -name "workflows.jsp"
+e ./console/src/main/webapp/workflows/workflows.jsp
+ack customcolumns
+ack daq.cookie
+fg
+find . -name "jobs.js"
+fg
+ssh gsbl90214.blue.ygrid.yahoo.com
+ssh warquickwhole.champ.corp.yahoo.com
+fg
+history 20
+e ./console/src/main/webapp/workflows/workflows.jsp
+ssh warquickwhole.champ.corp.yahoo.com
+top
+ssh gsbl90214.blue.ygrid.yahoo.com
+traceroute http://flubber-data.blue.ygrid.yahoo.com:9999/loadproxy/4http?redirect=
+cfi.ysm.vip.sp1.yahoo.comtraceroute 
+traceroute cfi.ysm.vip.sp1.yahoo.com
+traceroute flubber-data.blue.ygrid.yahoo.com
+traceroute dogma-cfi.data.yahoo.com
+traceroute savcfi.data.adx.vip.yahoo.com
+traceroute savcfi.data.adx.vip.ac4.yahoo.com
+ssh replication.red.ygrid.yahoo.com
+cd src/GDM/GDM
+ack "XmlElement"
+e console/src/main/java/com/yahoo/grid/tools/console/bean/DataSetInstanceSnapshot.java
+ack datasetinstancesnapshot
+ack xjc
+e console/src/main/java/com/yahoo/grid/tools/console/bean/DataSetInstanceSnapshot.java
+ack "@xmltype"
+ack javax.xml.bind
+e acquisition/loader/src/main/java/com/yahoo/grid/daq/pull/http/mapred/HttpDistributedLoaderStrategy.java
+e console/src/main/java/com/yahoo/grid/tools/console/bean/KnownDataSet.java
+ack knowndataset
+ack marshaller
+e workflow/src/main/java/com/yahoo/grid/tools/explorer/GDMFacetEventsExplorer.java
+ack jaxb
+cd src/GDM/GDM
+ack javax.xml.ws.service
+cd src/GDM/GDM
+ack basedir
+ack "base.dir"
+find . -name "dataset.xsd"
+ack pending
+e console/src/main/java/com/yahoo/grid/tools/console/bean/DataSetInstanceSnapshot.java console/src/main/java/com/yahoo/grid/tools/console/explorer/DataSetExplorer.java
+ssh gdmconsole.ygrid.yahoo.com
+cd  src/GDM/GDM
+ack transform.output.type.text.class
+ack transform.output
+ssh acquisition.red.ygrid.yahoo.com
+cd src/falcon
+ls
+ack "@post"
+e prism/src/main/java/org/apache/falcon/resource/proxy/SchedulableEntityManagerProxy.java
+cd src/GDM/GDM
+git pull
+ack feed_discovery_default
+e commons/src/main/java/com/yahoo/grid/tools/util/PluginProperties.java
+cd src/GDM/GDM
+e commons/src/main/java/com/yahoo/grid/tools/util/PluginProperties.java
+ssh replication.red.ygrid.yahoo.com
+ssh retention.ygrid.yahoo.com
+ssh retention.red.ygrid.yahoo.com
+ssh gdmconsole.ygrid.yahoo.com
+cd src/GDM/GDM
+ack instancekey
+ssh gdmconsole.ygrid.yahoo.com
+ssh replication.blue.ygrid.yahoo.com
+ssh retention.blue.ygrid.yahoo.com
+scp .ba* .en* .em* .lo* retention.blue.ygrid.yahoo.com:
+ssh retention.blue.ygrid.yahoo.com
+ssh gsbl90214.blue.ygrid.yahoo.com
+ssh replication.blue.ygrid.yahoo.com
+ssh retention.blue.ygrid.yahoo.com
+ls *ook*
+ls
+ls -l "--cookie"
+ls \-\-cookie
+ls "\-\-cookie"
+ls -l '--cookie'
+clean
+ls -l>q
+t q
+late
+ls -alt|head 20
+ssh retention.blue.ygrid.yahoo.com
+ls *ook*
+ls
+ls -l "--cookie"
+ls \-\-cookie
+ls "\-\-cookie"
+ls -l '--cookie'
+clean
+ls -l>q
+t q
+late
+ls -alt|head 20
+jobs
+kill %1
+jobs
+ls -alt
+jobs
+top
+late
+chmod +x mkcookie
+mkcookie
+./mkcookie
+mv mkcookie createYbyCookie.pl
+perl createYbyCookie.pl -u preece -d ygrid -o cookie0923
+curl -v --cookie `cat  ybycookie.ybraun`  -d  'resourceNames=[{"ResourceName":"gdm-dataset-ybtest32-15m"},{"ResourceName":"gdm-dataset-ybtest32-hourly"}]' http://gsbl90206.blue.ygrid.yahoo.com:9999/console/rest/config/dataset/getRetentionPolicies
+late
+curl -v --cookie `cat  cookie0923`  -d  'resourceNames=[{"ResourceName":"gdm-dataset-ybtest32-15m"},{"ResourceName":"gdm-dataset-ybtest32-hourly"}]' http://gsbl90206.blue.ygrid.yahoo.com:9999/console/rest/config/dataset/getRetentionPolicies
+man curl
+history 10
+curl -v --cookie `cat  cookie0923` http://gdmconsole.ygrid.yahoo.com:9999/console/api/userdashboard/instance/detail?frominstance=2015092110&toinstance=2015092114
+curl -v --cookie `cat  cookie0923` http://gdmconsole.ygrid.yahoo.com:9999/console/query/config/dataset/Benzene_1_5
+history 30
+ssh gdmconsole.ygrid.yahoo.com
+cd src
+cd GDM/GDM
+git pull
+cd src/GDM/GDM
+find . -name "bizuser.js"
+e ./console/src/main/webapp/webdev/js/bizuser.js
+ssh adm102.ygrid.yahoo.com
+ssh adm102.blue.ygrid.yahoo.com
+stop-facet console
+ssh gsbl90214.blue.ygrid.yahoo.com
+cd src/GDM/GDM
+find . -name "daqDataTable.js"
+e ./console/src/main/webapp/webdev/js/core/daqDataTable.js
+fg
+find . -name "bizuser.js"
+e ./console/src/main/webapp/webdev/js/bizuser.js
+fg
+ack "oCfgs.*initial"
+ack initialload
+fg
+ssh warquickwhole.champ.corp.yahoo.com
+ssh console.ygrid.yahoo.com
+ssh gdmconsole.ygrid.yahoo.com
+ssh gsdaqstgcon300.tan.ygrid.yahoo.com
+scp .en* .em* .ba* .lo* gsdaqstgcon300.tan.ygrid.yahoo.com:
+ssh gsdaqstgcon300.tan.ygrid.yahoo.com
+ssh gdmconsole.ygrid.yahoo.com
+history 20
+sc src/GDM/GDM
+cd src/GDM/GDM
+ack removeall
+e discovery/src/main/java/com/yahoo/grid/tools/monitor/DataSetAvailabilityMonitor.java
+e core/src/main/java/com/yahoo/grid/tools/workflow/repository/dao/WorkflowRepositoryConsistencyVerifier.java
+e replication/coordinator/src/main/java/com/yahoo/grid/tools/replication/coordinator/workflow/ColoAwareReplicationWorkflowGenerator.java
+e retention/discovery/src/main/java/com/yahoo/grid/tools/discovery/filter/TargetAwareRepositoryBasedFilter.java
+e workflow/src/main/java/com/yahoo/grid/tools/service/workflow/DefaultAsynchronousWorkflowLauncher.java
+e core/src/main/java/com/yahoo/grid/tools/util/classloader/HadoopClassLoaderFactory.java
+ssh retention.blue.ygrid.yahoo.com

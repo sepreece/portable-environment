@@ -1,0 +1,20 @@
+[user]
+	name = Scott Preece
+	email = preece@yahoo-inc.com
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+	st = status
+	br = branch
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+	excludesfile = /Users/preece/.gitignore_global
+[diff]
+	tool = opendiff
+[pull]
+	rebase = true
+[branch]
+	autosetuprebase = always

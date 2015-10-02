@@ -1,7 +1,7 @@
-
 #=== start of automatically maintained lines (do not delete)===
 # .bashrc, sourced by interactive non-login shells (also called by .bash_profile)
 export PATH=/pear/bin:$PATH
+
 umask 022
 #if [ "$PS1" != "" ]
 #then
@@ -109,8 +109,10 @@ um ()
 }
 typeset -fx um
 
-alias logs='cd /home/y/libexec/yjava_tomcat/webapps/logs'
+alias oldlogs='cd /home/y/libexec/yjava_tomcat/webapps/logs'
+alias logs='cd /home/y/logs/ygrid*server'
 alias dsconf='cd /home/y/libexec/ygrid_gdm_*_server/datasetconf'
+alias staging='gsdaqstgcon300.tan.ygrid.yahoo.com'
 
 C ()
 {
@@ -143,8 +145,16 @@ typeset -fx late
 #		Now make our prompt happen
 C $HOME
 
-PATH=$HOME/pear/bin:$HOME/bin:/bin:/sbin:/home/y/bin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin
+PATH=$HOME/pear/bin:/bin/pear:$HOME/bin:/bin:/sbin:/home/y/bin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH
+
+export HADOOP_HOME=/home/gs/hadoop/current
+export JAVA_HOME=/home/gs/java/jdk64/current
+export HADOOP_CONF_DIR=/home/gs/conf/current
+
+if [ "$HOSTHEAD" != "measureking-lm" ] ; then
+    kinit -k -t /homes/dfsload/dfsload.dev.headless.keytab dfsload@DEV.YGRID.YAHOO.COM
+fi
 
 alias phpunit='php -d include_path=.:~/pear/share/pear ~/pear/bin/phpunit'
 
