@@ -9,7 +9,7 @@
 ;;; skip copyrights and warranties
 (put 'eval-expression 'disabled nil)	;; want this if startup fails
 (setq inhibit-startup-message t)
-
+(setq confirm-kill-emacs 'y-or-no-p)
 
 
 (set-default 'mode-line-buffer-identification '( "STARTUP-FAILED PHASE 0: %b " ))
@@ -587,7 +587,7 @@ This regexp should start with \"^\"."
 (global-set-key "\^x\^u" 'advertised-undo)
 (global-set-key "\^x\^v" 'find-file-other-window)
 (global-set-key "\^xv" 'find-file)
-(global-set-key "\^xV" 'find-file-at-point)
+(global-set-key "\^x." 'find-file-at-point)
 (global-set-key "\^x\^z" 'shrink-window)
 ;(global-set-key "\^x!"   'shell-command)
 (global-set-key "\^xd"   'delete-window)
@@ -610,8 +610,6 @@ This regexp should start with \"^\"."
 (global-set-key "\^x<"   'delete-whitespace-backward)
 (global-set-key "\^x>"   'delete-whitespace-forward)
 (global-set-key "\^x?"   'delete-whitespace)
-(global-set-key "\^x,"   'skip-whitespace-backward)
-(global-set-key "\^x."   'skip-whitespace)
 ;(global-set-key "\^_"    'suspend-emacs))
 
 (set-default 'mode-line-buffer-identification '( "STARTUP-FAILED PHASE 8: %b " ))
@@ -827,7 +825,7 @@ This regexp should start with \"^\"."
 (set-default 'mode-line-buffer-identification '( "Emacs: %b " ))
 
 (setq default-mode-line-format
-      '("%[" mode-line-buffer-identification " %*+%* %3p (%m) %f%] %-"))
+      '("%[" mode-line-buffer-identification " %*+%* L%l (%m) %f%] %-"))
 ;      '("" "%[%f %*+%* %3p (" mode-name minor-mode-alist ")%]" mode-line-process " " mode-line-buffer-identification "%-"))
 
 ;(setq exec-directory "/proj/svr4/r40v1/devel/preece/emacs-18.57/etc/")
