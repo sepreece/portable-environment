@@ -16,5 +16,7 @@
 	tool = opendiff
 [pull]
 	rebase = true
+[push]
+	default = simple
 [branch]
 	autosetuprebase = always
