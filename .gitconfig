@@ -11,7 +11,7 @@
 	ui = auto
 [core]
 	autocrlf = input
-	excludesfile = /Users/preece/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [diff]
 	tool = opendiff
 [pull]
