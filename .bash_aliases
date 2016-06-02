@@ -21,10 +21,48 @@ if [ -x ~/.dircolorsc ]; then
    eval "`dircolors -b ~/.dircolorsrc`"
 fi
 
-# Load GDM-specific shell variables
+# Load GDM-specific aliases and variables
 
-if [ -x ~/gdmsetup ] ; then
-	. ~/gdmsetup
+alias oldlogs='cd /home/y/libexec/yjava_tomcat/webapps/logs'
+if [ -x /home/y/logs ]
+then
+    alias logs='cd /home/y/logs/ygrid*'
+    if [ -d /home/y/logs/ygrid*server ]
+    then
+        alias logs='cd /home/y/logs/ygrid*server'
+    fi
+fi
+
+alias dsconf='cd /home/y/libexec/ygrid_gdm_*_server/datasetconf'
+alias staging='gsdaqstgcon300.tan.ygrid.yahoo.com'
+
+export mydevbox=warquickwhole.champ.corp.yahoo.com
+export myconsole=opengdm3blue-n1.blue.ygrid.yahoo.com
+export myreplication=opengdm3blue-n4.blue.ygrid.yahoo.com
+export myacquisition=opengdm3blue-n3.blue.ygrid.yahoo.com
+export myretention=opengdm3blue-n5.blue.ygrid.yahoo.com
+export myfdiserver=openqe1blue-n2.blue.ygrid.yahoo.com
+export myloadproxy=openqe1blue-n1.blue.ygrid.yahoo.com
+export hadoopdocs=wiredrequired.corp.ne1.yahoo.com
+export starlingproc=gsstar102.blue.ygrid.yahoo.com
+export starlingdev=crunchedhunched.corp.ne1.yahoo.com
+
+alias godevbox='ssh -A $mydevbox'
+alias goconsole='ssh -A $myconsole'
+alias goacquisition='ssh -A $myacquisition'
+alias goreplication='ssh -A $myreplication'
+alias goretention='ssh -A $myretention'
+alias gofdiserver='ssh -A $myfdiserver'
+alias goloadproxy='ssh -A $myloadproxy'
+alias gohadoopdocs='ssh -A $myhadoopdocs'
+alias gostarling='ssh -A $mystarlingproc'
+alias gostarlingproc='ssh -A $mystarlingproc'
+alias gostarlingdev='ssh -A $starlingdev'
+
+alias dfsdo='sudo -u dfsload'
+
+if [ -x ~/bin/gdmsetup ] ; then
+	. ~/bin/gdmsetup
 	echo "Loaded gdmsetup"
 fi
 
@@ -86,6 +124,12 @@ t ()
 }
 typeset -fx t
 
+# copy environment to remote host
+setup ()
+{
+	scp ~/.ba* ~/.emacs ~/.ackrc ~/.git* ~/.font* $1:
+}
+typeset -fx setup
 
 rm ()
 {
@@ -101,18 +145,13 @@ typeset -fx clean
 
 
 um ()
-{
-	if [ ${PWD%*preece*} = $PWD ] ;
+{	if [ ${PWD%*preece*} = $PWD ] ;
 		then umask 2;
 		else umask 22; fi
 	/bin/echo PWD=$PWD\ 
 }
 typeset -fx um
 
-alias oldlogs='cd /home/y/libexec/yjava_tomcat/webapps/logs'
-alias logs='cd /home/y/logs/ygrid*server'
-alias dsconf='cd /home/y/libexec/ygrid_gdm_*_server/datasetconf'
-alias staging='gsdaqstgcon300.tan.ygrid.yahoo.com'
 
 C ()
 {
@@ -129,6 +168,12 @@ back ()
     C $OLDPWD
 }
 typeset -fx back
+
+gobranch ()
+{
+    C ~/gdm/src/$*/GDM
+}
+typeset -fx gobranch
 	
 clear ()
 {
@@ -145,15 +190,26 @@ typeset -fx late
 #		Now make our prompt happen
 C $HOME
 
-PATH=$HOME/pear/bin:/bin/pear:$HOME/bin:/bin:/sbin:/home/y/bin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:$PATH
+PATH=$HOME/pear/bin:/bin/pear:$HOME/bin:/bin:/sbin:/home/y/bin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/share:$PATH
 export PATH
 
 export HADOOP_HOME=/home/gs/hadoop/current
 export JAVA_HOME=/home/gs/java/jdk64/current
 export HADOOP_CONF_DIR=/home/gs/conf/current
 
+PATH=$PATH:$HADOOP_HOME/bin
+
 if [ "$HOSTHEAD" != "measureking-lm" ] ; then
-    kinit -k -t /homes/dfsload/dfsload.dev.headless.keytab dfsload@DEV.YGRID.YAHOO.COM
+    if [ -x /usr/bin/kinit ] ; then
+        if [ -x /homes/dfsload/dfsload.dev.headless.keytab ] ; then
+            kinit -k -t /homes/dfsload/dfsload.dev.headless.keytab dfsload@DEV.YGRID.YAHOO.COM
+        fi
+    fi
+    if [ -x ~dfsload ] ; then
+        if [ -x ~dfsload/dfsloadkinit.sh ] ; then
+            sudo -u dfsload ~dfsload/dfsloadkinit.sh
+        fi
+    fi
 fi
 
 alias phpunit='php -d include_path=.:~/pear/share/pear ~/pear/bin/phpunit'
