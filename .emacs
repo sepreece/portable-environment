@@ -9,7 +9,7 @@
 ;;; skip copyrights and warranties
 (put 'eval-expression 'disabled nil)	;; want this if startup fails
 (setq inhibit-startup-message t)
-(setq confirm-kill-emacs 'y-or-no-p)
+(setq confirm-kill-emacs 'y-or-n-p)
 
 
 (set-default 'mode-line-buffer-identification '( "STARTUP-FAILED PHASE 0: %b " ))
