@@ -1,6 +1,5 @@
 #=== start of automatically maintained lines (do not delete)===
 # .bashrc, sourced by interactive non-login shells (also called by .bash_profile)
-export PATH=/pear/bin:$PATH
 
 umask 022
 #if [ "$PS1" != "" ]
@@ -34,7 +33,6 @@ then
 fi
 
 alias dsconf='cd /home/y/libexec/ygrid_gdm_*_server/datasetconf'
-alias staging='gsdaqstgcon300.tan.ygrid.yahoo.com'
 
 export mydevbox=warquickwhole.champ.corp.yahoo.com
 export myconsole=opengdm3blue-n1.blue.ygrid.yahoo.com
@@ -46,6 +44,7 @@ export myloadproxy=openqe1blue-n1.blue.ygrid.yahoo.com
 export hadoopdocs=wiredrequired.corp.ne1.yahoo.com
 export starlingproc=gsstar102.blue.ygrid.yahoo.com
 export starlingdev=crunchedhunched.corp.ne1.yahoo.com
+export prodconsole=gdmconsole.ygrid.yahoo.com
 
 alias godevbox='ssh -A $mydevbox'
 alias goconsole='ssh -A $myconsole'
@@ -55,13 +54,15 @@ alias goretention='ssh -A $myretention'
 alias gofdiserver='ssh -A $myfdiserver'
 alias goloadproxy='ssh -A $myloadproxy'
 alias gohadoopdocs='ssh -A $myhadoopdocs'
-alias gostarling='ssh -A $mystarlingproc'
-alias gostarlingproc='ssh -A $mystarlingproc'
+alias gostarling='ssh -A $starlingproc'
+alias gostarlingproc='ssh -A $starlingproc'
 alias gostarlingdev='ssh -A $starlingdev'
+alias goprodconsole='ssh -A $prodconsole'
+alias gostaging='ssh -A gsdaqstgcon300.tan.ygrid.yahoo.com'
 
 alias dfsdo='sudo -u dfsload'
 
-if [ -x ~/bin/gdmsetup ] ; then
+if [ -x ~/bin/gdmsetup -a -d ~/gdm/src ] ; then
 	. ~/bin/gdmsetup
 	echo "Loaded gdmsetup"
 fi
@@ -88,6 +89,9 @@ if [ -n "$YROOT_NAME" ]; then
     PROMPTHEAD="$PROMPTHEAD[$YROOT_NAME]"; export PROMPTHEAD
 fi
 
+OS_NAME=`uname -s`
+export OS_NAME
+
 if [ $TERM != dumb ] ; then
 	PROMPTHEAD="[7m$PROMPTHEAD [m"
 else
@@ -101,9 +105,6 @@ export PROMPTHEAD
 #	DO NOT set up full path until end, in case NFS outage makes
 #	part of it unavailable (causing unbounded hang)
 
-SAFEPLACE=~/SafePlace
-export SAFEPLACE
-
 CDPATH=:~:; export CPDATH
 
 #set -o trackall
@@ -112,11 +113,34 @@ set -o monitor
 
 /bin/stty susp ^z
 
-EDITOR=/usr/bin/emacs
-export EDITOR
+if [ "$OS_NAME" == "Darwin" ]; then
 
-set -o emacs
-alias e="/usr/bin/emacs"
+    # On MacOS, use the local emacs
+    EDITOR=/Applications/Emacs.app/Contents/MacOS/Emacs
+    export EDITOR
+    alias e='/Applications/Emacs.app/Contents/MacOS/Emacs "$@"'
+
+    set -o emacs
+else
+    EDITOR=/usr/bin/emacs
+    export EDITOR
+
+    set -o emacs
+
+    # Don't try to use X11 emacs when sudo-ed to somebody else - won't work
+    # and don't try to use X11 emacs on a grid host - it takes way too long
+
+    checkstring=`uname -a|grep "ygrid.yahoo.com"`
+    if [ "$SUDO_USER" == "" ] ; then
+        if [ -z "${checkstring}" ]; then
+            alias e="/usr/bin/emacs"
+        else
+            alias e="/usr/bin/emacs -nw"
+        fi
+    else
+        alias e="/usr/bin/emacs -nw -l ~preece/.emacs"
+    fi
+fi
 
 t ()
 {
@@ -172,6 +196,7 @@ typeset -fx back
 gobranch ()
 {
     C ~/gdm/src/$*/GDM
+    export WORKSPACE=`pwd`
 }
 typeset -fx gobranch
 	
@@ -190,16 +215,18 @@ typeset -fx late
 #		Now make our prompt happen
 C $HOME
 
-PATH=$HOME/pear/bin:/bin/pear:$HOME/bin:/bin:/sbin:/home/y/bin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/share:$PATH
+PATH=$HOME/devbin:$HOME/bin:/bin:/sbin:/home/y/bin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/share:$PATH
 export PATH
 
+export STARLING_HOME=/home/y/share/starling_proc
 export HADOOP_HOME=/home/gs/hadoop/current
-export JAVA_HOME=/home/gs/java/jdk64/current
+export JAVA_HOME=/home/gs/java/jdk
 export HADOOP_CONF_DIR=/home/gs/conf/current
+export OOZIE_URL=http://axoniteblue-oozie.blue.ygrid.yahoo.com:4080/oozie
 
-PATH=$PATH:$HADOOP_HOME/bin
+PATH=$PATH:$HADOOP_HOME/bin:$STARLING_HOME/bin
 
-if [ "$HOSTHEAD" != "measureking-lm" ] ; then
+if [ -x /home/gs/hadoop/current/bin/hdfs ] ; then
     if [ -x /usr/bin/kinit ] ; then
         if [ -x /homes/dfsload/dfsload.dev.headless.keytab ] ; then
             kinit -k -t /homes/dfsload/dfsload.dev.headless.keytab dfsload@DEV.YGRID.YAHOO.COM
@@ -212,18 +239,7 @@ if [ "$HOSTHEAD" != "measureking-lm" ] ; then
     fi
 fi
 
-alias phpunit='php -d include_path=.:~/pear/share/pear ~/pear/bin/phpunit'
-
-#ulimit -s 262144
-
 if [ -s $HOME/.env.local ] ; then
 	. $HOME/.env.local
-fi
-
-#
-#	This has to happen after .env.local has possibly changed SAFEPLACE...
-#
-if [ -d $SAFEPLACE ] ; then
-   /usr/bin/find $SAFEPLACE \( -name '[pv].*' \) -mtime +14 -exec RM -f {} \;
 fi
 
