@@ -32,20 +32,6 @@ then
     fi
 fi
 
-alias dsconf='cd /home/y/libexec/ygrid_gdm_*_server/datasetconf'
-
-export mydevbox=warquickwhole.champ.corp.yahoo.com
-export myconsole=opengdm3blue-n1.blue.ygrid.yahoo.com
-export myreplication=opengdm3blue-n4.blue.ygrid.yahoo.com
-export myacquisition=opengdm3blue-n3.blue.ygrid.yahoo.com
-export myretention=opengdm3blue-n5.blue.ygrid.yahoo.com
-export myfdiserver=openqe1blue-n2.blue.ygrid.yahoo.com
-export myloadproxy=openqe1blue-n1.blue.ygrid.yahoo.com
-export hadoopdocs=wiredrequired.corp.ne1.yahoo.com
-export starlingproc=gsstar102.blue.ygrid.yahoo.com
-export starlingdev=crunchedhunched.corp.ne1.yahoo.com
-export prodconsole=gdmconsole.ygrid.yahoo.com
-
 alias godevbox='ssh -A $mydevbox'
 alias goconsole='ssh -A $myconsole'
 alias goacquisition='ssh -A $myacquisition'
@@ -58,7 +44,6 @@ alias gostarling='ssh -A $starlingproc'
 alias gostarlingproc='ssh -A $starlingproc'
 alias gostarlingdev='ssh -A $starlingdev'
 alias goprodconsole='ssh -A $prodconsole'
-alias gostaging='ssh -A gsdaqstgcon300.tan.ygrid.yahoo.com'
 
 alias dfsdo='sudo -u dfsload'
 
@@ -218,26 +203,13 @@ C $HOME
 PATH=$HOME/devbin:$HOME/bin:/bin:/sbin:/home/y/bin:/usr/local/bin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/share:$PATH
 export PATH
 
-export STARLING_HOME=/home/y/share/starling_proc
-export HADOOP_HOME=/home/gs/hadoop/current
+export HADOOP_HOME=
 export JAVA_HOME=/home/gs/java/jdk
-export HADOOP_CONF_DIR=/home/gs/conf/current
-export OOZIE_URL=http://axoniteblue-oozie.blue.ygrid.yahoo.com:4080/oozie
+export HADOOP_CONF_DIR=
 
-PATH=$PATH:$HADOOP_HOME/bin:$STARLING_HOME/bin
+PATH=$PATH:$HADOOP_HOME/bin
 
-if [ -x /home/gs/hadoop/current/bin/hdfs ] ; then
-    if [ -x /usr/bin/kinit ] ; then
-        if [ -x /homes/dfsload/dfsload.dev.headless.keytab ] ; then
-            kinit -k -t /homes/dfsload/dfsload.dev.headless.keytab dfsload@DEV.YGRID.YAHOO.COM
-        fi
-    fi
-    if [ -x ~dfsload ] ; then
-        if [ -x ~dfsload/dfsloadkinit.sh ] ; then
-            sudo -u dfsload ~dfsload/dfsloadkinit.sh
-        fi
-    fi
-fi
+
 
 if [ -s $HOME/.env.local ] ; then
 	. $HOME/.env.local
